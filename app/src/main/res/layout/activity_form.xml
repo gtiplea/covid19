@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activities.FormActivity">
+
+    <FrameLayout
+        android:id="@+id/Question1"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="#D11">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/Question2"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Question1"
+        android:background="#D22" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/Question3"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Question2"
+        android:background="D1111" >
+    </FrameLayout>
+
+</RelativeLayout>
