@@ -2,31 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".activities.FormActivity">
-
-    <FrameLayout
-        android:id="@+id/Question1"
-        android:layout_width="fill_parent"
-        android:layout_height="150dp"
-        android:background="#D11">
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/Question2"
-        android:layout_width="fill_parent"
-        android:layout_height="150dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Question1"
-        android:background="#D22" >
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/Question3"
-        android:layout_width="fill_parent"
-        android:layout_height="150dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Question2"
-        android:background="D1111" >
-    </FrameLayout>
+    <fragment
+        android:id="@+id/NavFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navGraph="@navigation/navigation"
+        app:defaultNavHost="true"
+        />
 
 </RelativeLayout>

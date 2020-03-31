@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".activities.SymptomsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="Ce simptomatologie aveti?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34dp" />
+
+
+    <CheckBox
+        android:id="@+id/SymptomFever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Febra"
+        android:layout_marginBottom="30dp"
+        android:textSize="24dp" />
+
+    <CheckBox
+        android:id="@+id/SymptomCough"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tuse"
+        android:layout_marginBottom="30dp"
+        android:textSize="24dp"  />
+
+    <CheckBox
+        android:id="@+id/SymptomTired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oboseala"
+        android:layout_marginBottom="30dp"
+        android:textSize="24dp"  />
+
+    <CheckBox
+        android:id="@+id/SymptomDifficultyBreathing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Greutate in respiratie"
+        android:textSize="24dp"
+        android:layout_marginBottom="90dp" />
+
+    <Button
+            android:id="@+id/to_location_button"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:backgroundTint="#D11111"
+            android:fadingEdge="horizontal|vertical"
+            android:text="Inainte"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+</LinearLayout>

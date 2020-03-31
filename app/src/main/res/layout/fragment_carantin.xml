@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".activities.CarantinFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="In ce situatie va aflati acum?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34dp" />
+
+    <RadioGroup
+        android:id="@+id/carantinChoiceGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RadioButton
+            android:id="@+id/carantina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carantina"
+            android:layout_marginBottom="20dp"
+            android:textSize="24dp"/>
+        <RadioButton
+            android:id="@+id/izolare"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:text="Izolare"
+            android:textSize="24dp"/>
+
+        <RadioButton
+            android:id="@+id/autoizolare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:text="Auto-Izolare"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/to_contact_button"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:backgroundTint="#D11111"
+            android:fadingEdge="horizontal|vertical"
+            android:text="Inainte"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+
+</LinearLayout>

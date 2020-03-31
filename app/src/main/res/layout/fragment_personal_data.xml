@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".activities.PersonalDataFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="Date cu caracter personal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34dp" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPersonName"
+        android:hint="NUME Prenume" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="07424..."
+        />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="numar card de sanatate (optional)"
+        />
+
+    <Button
+        android:id="@+id/to_finish_button"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|top"
+        android:backgroundTint="#D11111"
+        android:fadingEdge="horizontal|vertical"
+        android:text="Termina"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

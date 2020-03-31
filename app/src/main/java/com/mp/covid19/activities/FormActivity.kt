@@ -11,3 +11,5 @@ class FormActivity : AppCompatActivity() {
         setContentView(R.layout.activity_form)
     }
 }
+
+// MAIN - > ACTIVITY -> Carantin -> Contact -> Symptoms -> Location -> PersonalData

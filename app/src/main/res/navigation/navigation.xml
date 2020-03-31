@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    tools:ignore="UnusedNavigation"
+    app:startDestination="@id/carantinFragment">
+
+    <fragment
+        android:id="@+id/carantinFragment"
+        android:name="com.mp.covid19.activities.CarantinFragment"
+        android:label="fragment_carantin"
+        tools:layout="@layout/fragment_carantin" >
+        <action
+            android:id="@+id/action_carantinFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.mp.covid19.activities.ContactFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/action_contactFragment_to_symptomsFragment"
+            app:destination="@id/symptomsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/symptomsFragment"
+        android:name="com.mp.covid19.activities.SymptomsFragment"
+        android:label="fragment_symptoms"
+        tools:layout="@layout/fragment_symptoms" >
+        <action
+            android:id="@+id/action_symptomsFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.mp.covid19.activities.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_locationFragment_to_personalDataFragment"
+            app:destination="@id/personalDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalDataFragment"
+        android:name="com.mp.covid19.activities.PersonalDataFragment"
+        android:label="fragment_personal_data"
+        tools:layout="@layout/fragment_personal_data" >
+        <action
+            android:id="@+id/action_personalDataFragment_to_endScreen"
+            app:destination="@id/endScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/endScreen"
+        android:name="com.mp.covid19.activities.EndScreen"
+        android:label="EndScreen" />
+</navigation>
